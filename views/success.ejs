@@ -1,0 +1,80 @@
+<!-- views/success.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      #container {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        min-width: 100px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h2 {
+        color: aqua;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #1c77b4;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      a:hover {
+        color: #0d4e8d;
+      }
+
+      #sendAnotherButton {
+        background: linear-gradient(45deg, aqua, #1c77b4);
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      #sendAnotherButton:hover {
+        background: linear-gradient(45deg, #1c77b4, aqua);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Success!</h2>
+      <p><%= message %></p>
+      <p><a href="/">Go back to home</a></p>
+      <button id="sendAnotherButton" onclick="location.href='/';">
+        Send Another Message
+      </button>
+    </div>
+  </body>
+</html>
