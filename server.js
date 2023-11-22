@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
+app.get('/ChanMin', (req, res) => {
   res.render('index');
 });
 
